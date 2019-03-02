@@ -117,8 +117,9 @@ $db->query('set @@session.time_zone = "-4:00"');
 		</div>
 		<div data-role="main" class ="ui-content" data-theme = "a" id = "maindiv" style = 'padding:0;border-style:solid;border-color:red;border-width:0px;height:inherit;'>
 			
-			<div style = 'color:black;font-weight:bold;font-size:45px;text-align:center;width:100%;height:100%;background-size:100% 100%;background-image:url("http://cdn.fabricrenewal.netdna-cdn.com/wp-content/uploads/2014/02/slide3.jpg"); background-position:center;background-repeat:no-repeat'>
+			<div style = 'color:black;font-weight:bold;font-size:45px;text-align:center;width:100%;height:100%;background-size:100% 100%;");'>
 				<br>
+				<img src="conceptImage.png" style = "width:20%;height:100px;">
 				<br>
 				<p style = "vertical-align:middle;">PICKUP AND DELIVERY<br>FOR YOUR DRY CLEANING</p>
 				<br><br>			
