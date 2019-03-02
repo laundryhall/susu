@@ -110,6 +110,7 @@ $db->query('set @@session.time_zone = "-4:00"');
 					<li><a href="#" onclick = "window.location.hash = 'stayinformed'">How it works</a></li>
 					<li id = "drivers"><a href="#" onclick = "window.location.hash = 'drive'">Save</a></li>
 					<li id = ""><a href="#" onclick = "window.location.hash = 'pricing'">Contact Us</a></li>
+					<li id = ""><a href="#" onclick = "window.location.hash = 'share'">Contact Us</a></li>
       					
 				</ul>
 			</div>
