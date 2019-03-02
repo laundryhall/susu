@@ -1,0 +1,181 @@
+.ui-icon-sweater:after {
+    background-image: url("./images/sweater.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-pants:after {
+    background-image: url("./images/jeans.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-shirt:after {
+    background-image: url("./images/shirt.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-blouse:after {
+    background-image: url("./images/blouse.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-dress:after {
+    background-image: url("./images/dress.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-jacket:after {
+    background-image: url("./images/jacket.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-longcoat:after {
+    background-image: url("./images/long coat.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-scarf:after {
+    background-image: url("./images/scarf.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-shorts:after {
+    background-image: url("./images/Shorts.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-blanket:after {
+    background-image: url("./images/blanket.svg");
+    /* Make your icon fit */
+    background-size: 18px 18px;
+}
+.ui-icon-comforter:after {
+    background-image: url("./images/comforter.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-tie:after {
+    background-image: url("./images/tie.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-skirt:after {
+    background-image: url("./images/skirt.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-unknown:after {
+    background-image: url("./images/question-mark.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-lshirt:after {
+    background-image: url("./images/lshirt.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-washer:after {
+    background-image: url("./images/washing-machine.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-redo:after {
+    background-image: url("./images/redo.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-vest:after {
+    background-image: url("./images/vest.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-coupon:after {
+    background-image: url("./images/coupon.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-labcoat:after {
+    background-image: url("./images/lab-coat.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-info2:after {
+    background-image: url("./images/info.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-dry:after {
+    background-image: url("./images/dry_cleaning.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-clock:after {
+    background-image: url("./images/clock_circular.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-location:after {
+    background-image: url("./images/location_pin.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-stops:after {
+    background-image: url("./images/route.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-earnings:after {
+    background-image: url("./images/dollar-pointer.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-clothes:after {
+    background-image: url("./images/clothes.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-ticket:after {
+    background-image: url("./images/invoice.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.ui-icon-bluespot:after {
+    background-image: url("./images/bluespot.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}.ui-icon-redspot:after {
+    background-image: url("./images/redspot.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}.ui-icon-payout:after {
+    background-image: url("./images/coin.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}.ui-icon-placeholder:after {
+    background-image: url("./images/placeholder.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}.ui-icon-courier:after {
+    background-image: url("./images/courier.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}.ui-icon-bag:after {
+    background-image: url("./images/rubbish-bag.svg");
+    /* Make your icon fit */
+    background-size: 20px 20px;
+}
+.circular {
+	width: 300px;
+	height: 300px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(http://www.adtechnology.co.uk/images/UGM-default-user.png) no-repeat;
+	}
+
+.circular img {
+	opacity: 0;
+	filter: alpha(opacity=0);
+	}
+.img-circle {
+    border-radius: 50%;
+}

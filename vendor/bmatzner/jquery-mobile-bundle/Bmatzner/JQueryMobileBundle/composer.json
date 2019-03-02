@@ -1,0 +1,25 @@
+{
+    "name":        "bmatzner/jquery-mobile-bundle",
+    "type":        "symfony-bundle",
+    "description": "jQuery Mobile Bundle for Symfony2",
+    "keywords":    ["jquery", "javascript", "mobile", "symfony"],
+    "homepage":    "http://jquerymobile.com/",
+    "license":     ["MIT", "GPLv2"],
+    "authors":     [
+        {
+            "name":     "Bernd Matzner",
+            "email":    "bernd@matznermatzner.de",
+            "homepage": "http://berndmatzner.de"
+        }
+    ],
+    "require":     {
+        "symfony/framework-bundle": ">=2.1",
+        "bmatzner/jquery-bundle":  ">=1.11"
+    },
+    "autoload":    {
+        "psr-0": {
+            "Bmatzner\\JQueryMobileBundle": ""
+        }
+    },
+    "target-dir":  "Bmatzner/JQueryMobileBundle"
+}
