@@ -104,7 +104,7 @@ $db->query('set @@session.time_zone = "-4:00"');
 		<div data-role="header" data-theme = "b" style = "height:40%;">
 			
 			<div data-role="navbar" style = "text-align:center">
-				<h1 onclick = "window.location.hash = '';location.reload();" >SUSU CARD</h1>
+				<h1 onclick = "window.location.hash = '';location.reload();" style = "font-family:helvetica;">$U$U CARD</h1>
 				<ul>
 					<li id = "hiw"><a href="#">Home </a></li>
 					<li><a href="#" onclick = "window.location.hash = 'stayinformed'">How it works</a></li>
