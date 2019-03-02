@@ -104,7 +104,7 @@ $db->query('set @@session.time_zone = "-4:00"');
 		<div data-role="header" data-theme = "b" style = "height:40%;">
 			
 			<div data-role="navbar" style = "text-align:center">
-				<p onclick = "window.location.hash = '';location.reload();" style = "font-family:arial;font-size:30px;">SUSU CARD</p>
+				<p onclick = "window.location.hash = '';location.reload();" style = "font-family:arial;font-size:30px;">SUSUCARD</p>
 				<ul>
 					<li id = "hiw"><a href="#">Home </a></li>
 					<li><a href="#" onclick = "window.location.hash = 'stayinformed'">How it works</a></li>
@@ -170,12 +170,12 @@ $db->query('set @@session.time_zone = "-4:00"');
 						</tr>
 						<tr>
 							<td>
-								<h2>Schedule a pickup</h2>
+								<h2>Subscribe</h2>
 							</td>
 						</tr>
 						<tr>
 							<td style = "padding:10px;">
-								Download our app available on android and ios and Schedule a pickup and delivery window.
+								Sign up for our annual recurring membership and get access to all of our deals.
 							</td>
 						</tr>
 					</table>
@@ -190,12 +190,12 @@ $db->query('set @@session.time_zone = "-4:00"');
 						</tr>
 						<tr>
 							<td>
-								<h2>Pickup</h2>
+								<h2>Customize</h2>
 							</td>
 						</tr>
 						<tr>
 							<td style = "padding:10px;">
-								Our driver will arrive within your scheduled time to collect your garments.
+								Upload a photo for your card and select businesses you want detailed on the back of you card. You have access to all deals whether there detailed on your card or not.
 							</td>
 						</tr>
 					</table>
