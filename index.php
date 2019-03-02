@@ -106,12 +106,10 @@ $db->query('set @@session.time_zone = "-4:00"');
 			<div data-role="navbar" style = "text-align:center">
 				<h1 onclick = "window.location.hash = '';location.reload();" >SUSU CARD</h1><p>THE ONLY COMMUNITY DISCOUNT CARD CUSTOMIZED FOR YOU</p>
 				<ul>
-					<li id = "hiw"><a href="#">How it Works</a></li>
-					<li><a href="#" onclick = "window.location.hash = 'stayinformed'">Stay Informed</a></li>
-					<li id = "drivers"><a href="#" onclick = "window.location.hash = 'drive'">Drive</a></li>
-					<li id = ""><a href="#" onclick = "window.location.hash = 'pricing'">Pricing</a></li>
-      					<li id = "faqs"><a href="#" onclick = "window.location.hash = 'FAQs'">FAQs</a></li>
-      					<li><a href="#" onclick = "window.location.hash = 'contact'">Contact</a></li>
+					<li id = "hiw"><a href="#">Home </a></li>
+					<li><a href="#" onclick = "window.location.hash = 'stayinformed'">How it works</a></li>
+					<li id = "drivers"><a href="#" onclick = "window.location.hash = 'drive'">Save</a></li>
+					<li id = ""><a href="#" onclick = "window.location.hash = 'pricing'">Contact Us</a></li>
       					
 				</ul>
 			</div>
