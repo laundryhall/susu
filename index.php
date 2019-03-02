@@ -104,7 +104,7 @@ $db->query('set @@session.time_zone = "-4:00"');
 		<div data-role="header" data-theme = "b" style = "height:40%;">
 			
 			<div data-role="navbar" style = "text-align:center">
-				<h1 onclick = "window.location.hash = '';location.reload();" >SUSU CARD</h1><p>THE ONLY COMMUNITY DISCOUNT CARD CUSTOMIZED FOR YOU</p>
+				<h1 onclick = "window.location.hash = '';location.reload();" >SMOLDER CARD</h1><p>COOL CARD. HOT DEALS</p>
 				<ul>
 					<li id = "hiw"><a href="#">Home </a></li>
 					<li><a href="#" onclick = "window.location.hash = 'stayinformed'">How it works</a></li>
@@ -122,7 +122,7 @@ $db->query('set @@session.time_zone = "-4:00"');
 				<img src="conceptImage.png" style = "">
 				<br>
 				<p style = "vertical-align:middle;font-size:20px;">THE ONLY COMMUNITY DISCOUNT CARD CUSTOMIZED FOR YOU</p>
-				<br><br>			
+				<br>			
 			</div>
 			
 			
