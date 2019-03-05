@@ -204,7 +204,7 @@ $db->query('set @@session.time_zone = "-4:00"');
 					<table style = "border:0px solid red;padding:0px;">
 						<tr>
 							<td>
-									<img src="http://protected-peak-28587.herokuapp.com/css/images/delivery-truck-with-circular-clock.svg" style = "width:20%;height:100px;" class="ui-li-icon ui-corner-none">
+									<img src="http://protected-peak-28587.herokuapp.com/css/images/piggy-bank.svg" style = "width:20%;height:100px;" class="ui-li-icon ui-corner-none">
 									
 							</td>
 						</tr>
