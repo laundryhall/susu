@@ -195,7 +195,7 @@ $db->query('set @@session.time_zone = "-4:00"');
 						</tr>
 						<tr>
 							<td style = "padding:10px;">
-								Upload a photo for your card and select businesses you want detailed on the back of you card. You have access to all deals whether there detailed on your card or not.
+								Upload a photo for your card and select businesses you want detailed on the back of your card.
 							</td>
 						</tr>
 					</table>
@@ -210,12 +210,12 @@ $db->query('set @@session.time_zone = "-4:00"');
 						</tr>
 						<tr>
 							<td>
-								<h2>Delivery</h2>
+								<h2>Save</h2>
 							</td>
 						</tr>
 						<tr>
 							<td style = "padding:10px;">
-								Your garments are professionally cleaned and delivered at your scheduled time.
+								We will mail your card. Browse our listing for discounts in your area.
 							</td>
 						</tr>
 					</table>
