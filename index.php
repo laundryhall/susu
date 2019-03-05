@@ -215,7 +215,7 @@ $db->query('set @@session.time_zone = "-4:00"');
 						</tr>
 						<tr>
 							<td style = "padding:10px;">
-								We will mail your card. Browse our listing for discounts in your area.
+								We will mail your card. Browse our directory for discounts in your area.
 							</td>
 						</tr>
 					</table>
