@@ -118,9 +118,12 @@ $db->query('set @@session.time_zone = "-4:00"');
 		<div data-role="main" class ="ui-content" data-theme = "a" id = "maindiv" style = 'padding:0;border-style:solid;border-color:red;border-width:0px;height:inherit;'>
 			
 			<div style = 'color:black;font-weight:bold;font-size:45px;text-align:center;width:100%;height:100%;background-size:100% 100%;");'>
+				<br>
 				<a href="#" style = "color:black;" >SAVE TODAY</a>
 				<br>
+				<br>
 				<img src="conceptImage.png" style = "">
+				<br>
 				<br>
 				<p style = "vertical-align:middle;font-size:20px;">THE ONLY COMMUNITY DISCOUNT CARD CUSTOMIZED FOR YOU</p>
 				<br>			
@@ -218,8 +221,11 @@ $db->query('set @@session.time_zone = "-4:00"');
 							</td>
 						</tr>
 					</table>
+					<br>
+					<a href="#" style = "color:black;" >SAVE TODAY</a>
 				</div>
 			</div><!-- /grid-b -->
+			<!--
 			<div>
 				<br>
 				<h2 style = "margin-left:auto;margin-right:auto;">For the latest LAUNDER IT news, sign up below!</h2>
@@ -244,6 +250,7 @@ $db->query('set @@session.time_zone = "-4:00"');
     					<input type="button" data-theme = "b" name="isubscribe" class="isubscribe" value="Subscribe" />
 				</div>
 			</div>
+			-->
 				<!--
 			<table cellpadding = "0" style = "margin-left:auto;margin-right:auto;border-width:2px;border-color:black;border-style:solid;">
 							<tr>
