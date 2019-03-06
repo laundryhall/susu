@@ -118,9 +118,7 @@ $db->query('set @@session.time_zone = "-4:00"');
 		<div data-role="main" class ="ui-content" data-theme = "a" id = "maindiv" style = 'padding:0;border-style:solid;border-color:red;border-width:0px;height:inherit;'>
 			
 			<div style = 'color:black;font-weight:bold;font-size:45px;text-align:center;width:100%;height:100%;background-size:100% 100%;");'>
-				<br>
-				<a href="#" style = "color:black;" >SAVE TODAY</a>
-				<br>
+				
 				<br>
 				<img src="conceptImage.png" style = "">
 				<br>
