@@ -121,6 +121,7 @@ $db->query('set @@session.time_zone = "-4:00"');
 				<br>
 				<a href="#" style = "color:black;" >SAVE TODAY</a>
 				<br>
+				<br>
 				<img src="conceptImage.png" style = "">
 				<br>
 				<p style = "vertical-align:middle;font-size:20px;">THE ONLY COMMUNITY DISCOUNT CARD CUSTOMIZED FOR YOU</p>
@@ -221,7 +222,7 @@ $db->query('set @@session.time_zone = "-4:00"');
 					</table>
 					<br>
 				</div>
-				
+				<br>
 				<a href="#" style = "color:black;font-size:30px" >SAVE TODAY</a>
 			</div><!-- /grid-b -->
 			<!--
