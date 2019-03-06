@@ -163,9 +163,7 @@ $db->query('set @@session.time_zone = "-4:00"');
 					<table>
 						<tr>
 							<td>
-									<img src="http://protected-peak-28587.herokuapp.com/css/images/smartphone-call.svg" style = "width:20%;height:100px;" class="ui-li-icon ui-corner-none">
-									<img src="http://protected-peak-28587.herokuapp.com/css/images/android-logo.svg" style = "width:20%;height:100px;" class="ui-li-icon ui-corner-none">
-									<img src="http://protected-peak-28587.herokuapp.com/css/images/apple.svg" style = "width:20%;height:100px;" class="ui-li-icon ui-corner-none">
+									<img src="http://suosuo.herokuapp.com/css/images/annual.svg" style = "width:20%;height:100px;" class="ui-li-icon ui-corner-none">
 							</td>
 						</tr>
 						<tr>
@@ -184,7 +182,7 @@ $db->query('set @@session.time_zone = "-4:00"');
 					<table style = "border:0px solid red;">
 						<tr>
 							<td>
-									<img src="http://protected-peak-28587.herokuapp.com/css/images/blackcourier.svg" style = "width:20%;height:100px;" class="ui-li-icon ui-corner-none">
+									<img src="http://suosuo.herokuapp.com/css/images/id-card.svg" style = "width:20%;height:100px;" class="ui-li-icon ui-corner-none">
 									
 							</td>
 						</tr>
@@ -215,7 +213,7 @@ $db->query('set @@session.time_zone = "-4:00"');
 						</tr>
 						<tr>
 							<td style = "padding:10px;">
-								We will mail your card. Browse our directory for discounts in your area.
+								Browse our directory for discounts in your area.
 							</td>
 						</tr>
 					</table>
