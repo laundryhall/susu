@@ -75,6 +75,7 @@ return $data;
 //to set time zone for mysql server
 $db->query('set @@session.time_zone = "-4:00"');
 	if(isset($_POST['save'])){
+		echo("conn made");
 
 		$request = new HttpRequest();
 		$request->setUrl('https://core.instantcard.net/api/v2/authenticate');

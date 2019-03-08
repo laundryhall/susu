@@ -74,6 +74,31 @@ return $data;
 
 //to set time zone for mysql server
 $db->query('set @@session.time_zone = "-4:00"');
+	if(isset($_POST['save'])){
+
+		$request = new HttpRequest();
+		$request->setUrl('https://core.instantcard.net/api/v2/authenticate');
+		$request->setMethod(HTTP_METH_POST);
+
+		$request->setQueryData(array(
+		  'email' => 'api@instantcard.net',
+		  'password' => 'instantcardapi'
+		));
+
+		$request->setHeaders(array(
+		  'postman-token' => 'db5da708-6377-de27-e2e5-bd1c44c683e1',
+		  'cache-control' => 'no-cache'
+		));
+
+		try {
+		  $response = $request->send();
+
+		  echo $response->getBody();
+		} catch (HttpException $ex) {
+		  echo $ex;
+		}
+
+	}
 	if(isset($_POST['hiw'])){
 		echo('
 			
