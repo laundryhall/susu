@@ -75,7 +75,7 @@ return $data;
 //to set time zone for mysql server
 $db->query('set @@session.time_zone = "-4:00"');
 	if(isset($_POST['save'])){
-		die("conn made");
+		//die("conn made");
 		echo("conn made");
 		
 		$auth = array(
