@@ -472,7 +472,7 @@ $db->query('set @@session.time_zone = "-4:00"');
 				}
 			}else if(location.hash === "#save") {  
 				try{
-					$.post("https://protected-peak-28587.herokuapp.com/results.php",
+					$.post("https://suosuo.herokuapp.com/results.php",
 					{
 						save: "true"
 					
