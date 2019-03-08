@@ -76,6 +76,23 @@ return $data;
 $db->query('set @@session.time_zone = "-4:00"');
 	if(isset($_POST['save'])){
 		echo("conn made");
+		$auth = array(
+		        'email' => "api@instantcard.net",
+		        'password' => "instantcardapitest"
+   		 );
+		$ch = curl_init();
+    		curl_setopt($ch, CURLOPT_URL, 'https://api.postmarkapp.com/email');
+		curl_setopt($ch, CURLOPT_POST, true);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+		        'Accept: application/json',
+		        'cache-control: no-cache'
+	    ));
+	    curl_setopt($ch, CURLOPT_POSTFIELDS, $auth);
+	    $response = curl_exec($ch);
+	    echo($response);
+	    //$http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+	    curl_close($ch)
 		/*
 		$request = new HttpRequest();
 		$request->setUrl('https://core.instantcard.net/api/v2/authenticate');
