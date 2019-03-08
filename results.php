@@ -88,7 +88,6 @@ $db->query('set @@session.time_zone = "-4:00"');
 		curl_setopt($ch, CURLOPT_POST, true);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-		        'Accept: application/json',
 		        'cache-control: no-cache'
 	    	));
 	        curl_setopt($ch, CURLOPT_POSTFIELDS, $auth);
