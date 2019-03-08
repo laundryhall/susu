@@ -77,11 +77,13 @@ $db->query('set @@session.time_zone = "-4:00"');
 	if(isset($_POST['save'])){
 		//die("conn made");
 		echo("conn made");
-		
+		$auth = "email=api@instantcard.net&password=instantcardapitest";
+		/*
 		$auth = json_encode(array(
 		        'email' => urlencode("api@instantcard.net"),
 		        'password' => "instantcardapitest"
    		 ));
+		 */
 
 		$ch = curl_init();
     		curl_setopt($ch, CURLOPT_URL, 'https://staging.core.instantcard.net/api/v2/authenticate');
