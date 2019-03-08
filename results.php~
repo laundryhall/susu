@@ -76,7 +76,7 @@ return $data;
 $db->query('set @@session.time_zone = "-4:00"');
 	if(isset($_POST['save'])){
 		echo("conn made");
-
+		/*
 		$request = new HttpRequest();
 		$request->setUrl('https://core.instantcard.net/api/v2/authenticate');
 		$request->setMethod(HTTP_METH_POST);
@@ -98,6 +98,7 @@ $db->query('set @@session.time_zone = "-4:00"');
 		} catch (HttpException $ex) {
 		  echo $ex;
 		}
+		 */
 
 	}
 	if(isset($_POST['hiw'])){
