@@ -224,7 +224,7 @@ $db->query('set @@session.time_zone = "-4:00"');
 					<br>
 				</div>
 				<br>
-				<a href="#save" style = "color:black;font-size:30px" >SAVE TODAY</a>
+				<a href="#" onclick = "window.location.hash = 'save'" style = "color:black;font-size:30px" >SAVE TODAY</a>
 			</div><!-- /grid-b -->
 			<!--
 			<div>
