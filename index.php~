@@ -224,7 +224,7 @@ $db->query('set @@session.time_zone = "-4:00"');
 					<br>
 				</div>
 				<br>
-				<a href="#" style = "color:black;font-size:30px" >SAVE TODAY</a>
+				<a href="#save" style = "color:black;font-size:30px" >SAVE TODAY</a>
 			</div><!-- /grid-b -->
 			<!--
 			<div>
@@ -455,6 +455,26 @@ $db->query('set @@session.time_zone = "-4:00"');
 					$.post("https://protected-peak-28587.herokuapp.com/results.php",
 					{
 						driver_referals: "true"
+					
+					},
+					function(data, status){
+						
+						//alert(data);
+						
+						
+						$("#maindiv").html(data).enhanceWithin();
+						
+							
+					});
+				
+				}catch(err){
+				alert(err.message);
+				}
+			}else if(location.hash === "#save") {  
+				try{
+					$.post("https://protected-peak-28587.herokuapp.com/results.php",
+					{
+						save: "true"
 					
 					},
 					function(data, status){
