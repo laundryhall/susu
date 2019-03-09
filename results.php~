@@ -86,7 +86,7 @@ $db->query('set @@session.time_zone = "-4:00"');
 		 */
 
 		$ch = curl_init();
-    		curl_setopt($ch, CURLOPT_URL, 'https://core.instantcard.net/api/v2/authenticate');
+    		curl_setopt($ch, CURLOPT_URL, 'https://core.instantcard.net/api/v2/');
 		curl_setopt($ch, CURLOPT_POST, true);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array(
