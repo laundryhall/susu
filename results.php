@@ -95,7 +95,7 @@ $db->query('set @@session.time_zone = "-4:00"');
 		        'cache-control: no-cache'
 	    	));
 		 */
-	        curl_setopt($ch, CURLOPT_POSTFIELDS, "email=api@instantcard.net&password=instantcardapitest");
+	        curl_setopt($ch, CURLOPT_POSTFIELDS, rawurlencode("email=api@instantcard.net&password=instantcardapitest"));
 	        $response = curl_exec($ch);
 	        echo($response);
 	        //$http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
