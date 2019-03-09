@@ -77,7 +77,7 @@ $db->query('set @@session.time_zone = "-4:00"');
 	if(isset($_POST['save'])){
 		//die("conn made");
 		echo("conn made");
-		$auth = urlencode("password=instantcardapitest");
+		$auth = urlencode("email=api@instantcard.net&password=instantcardapitest");
 		/*
 		$auth = json_encode(array(
 		        'email' => urlencode("api@instantcard.net"),
@@ -93,7 +93,7 @@ $db->query('set @@session.time_zone = "-4:00"');
 			'Accept: application/json',
 		        'cache-control: no-cache'
 	    	));
-	        curl_setopt($ch, CURLOPT_POSTFIELDS, $auth);
+	        curl_setopt($ch, CURLOPT_POSTFIELDS, "email=api@instantcard.net&password=instantcardapitest");
 	        $response = curl_exec($ch);
 	        echo($response);
 	        //$http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
