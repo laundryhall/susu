@@ -11,16 +11,20 @@
 
 namespace Symfony\Component\DependencyInjection\Tests;
 
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\DefinitionDecorator;
 
-class DefinitionDecoratorTest extends \PHPUnit_Framework_TestCase
+/**
+ * @group legacy
+ */
+class DefinitionDecoratorTest extends TestCase
 {
     public function testConstructor()
     {
         $def = new DefinitionDecorator('foo');
 
         $this->assertEquals('foo', $def->getParent());
-        $this->assertEquals(array(), $def->getChanges());
+        $this->assertEquals([], $def->getChanges());
     }
 
     /**
@@ -36,17 +40,17 @@ class DefinitionDecoratorTest extends \PHPUnit_Framework_TestCase
         $this->assertNull($def->$getter());
         $this->assertSame($def, $def->$setter('foo'));
         $this->assertEquals('foo', $def->$getter());
-        $this->assertEquals(array($changeKey => true), $def->getChanges());
+        $this->assertEquals([$changeKey => true], $def->getChanges());
     }
 
     public function getPropertyTests()
     {
-        return array(
-            array('class', 'class'),
-            array('factory', 'factory'),
-            array('configurator', 'configurator'),
-            array('file', 'file'),
-        );
+        return [
+            ['class', 'class'],
+            ['factory', 'factory'],
+            ['configurator', 'configurator'],
+            ['file', 'file'],
+        ];
     }
 
     public function testSetPublic()
@@ -56,7 +60,7 @@ class DefinitionDecoratorTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue($def->isPublic());
         $this->assertSame($def, $def->setPublic(false));
         $this->assertFalse($def->isPublic());
-        $this->assertEquals(array('public' => true), $def->getChanges());
+        $this->assertEquals(['public' => true], $def->getChanges());
     }
 
     public function testSetLazy()
@@ -66,7 +70,7 @@ class DefinitionDecoratorTest extends \PHPUnit_Framework_TestCase
         $this->assertFalse($def->isLazy());
         $this->assertSame($def, $def->setLazy(false));
         $this->assertFalse($def->isLazy());
-        $this->assertEquals(array('lazy' => true), $def->getChanges());
+        $this->assertEquals(['lazy' => true], $def->getChanges());
     }
 
     public function testSetAutowired()
@@ -74,18 +78,18 @@ class DefinitionDecoratorTest extends \PHPUnit_Framework_TestCase
         $def = new DefinitionDecorator('foo');
 
         $this->assertFalse($def->isAutowired());
-        $this->assertSame($def, $def->setAutowired(false));
-        $this->assertFalse($def->isAutowired());
-        $this->assertEquals(array('autowire' => true), $def->getChanges());
+        $this->assertSame($def, $def->setAutowired(true));
+        $this->assertTrue($def->isAutowired());
+        $this->assertSame(['autowired' => true], $def->getChanges());
     }
 
     public function testSetArgument()
     {
         $def = new DefinitionDecorator('foo');
 
-        $this->assertEquals(array(), $def->getArguments());
+        $this->assertEquals([], $def->getArguments());
         $this->assertSame($def, $def->replaceArgument(0, 'foo'));
-        $this->assertEquals(array('index_0' => 'foo'), $def->getArguments());
+        $this->assertEquals(['index_0' => 'foo'], $def->getArguments());
     }
 
     /**
@@ -102,7 +106,7 @@ class DefinitionDecoratorTest extends \PHPUnit_Framework_TestCase
     {
         $def = new DefinitionDecorator('foo');
 
-        $def->setArguments(array(0 => 'foo', 1 => 'bar'));
+        $def->setArguments([0 => 'foo', 1 => 'bar']);
         $this->assertEquals('foo', $def->getArgument(0));
         $this->assertEquals('bar', $def->getArgument(1));
 
@@ -110,7 +114,7 @@ class DefinitionDecoratorTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals('foo', $def->getArgument(0));
         $this->assertEquals('baz', $def->getArgument(1));
 
-        $this->assertEquals(array(0 => 'foo', 1 => 'bar', 'index_1' => 'baz'), $def->getArguments());
+        $this->assertEquals([0 => 'foo', 1 => 'bar', 'index_1' => 'baz'], $def->getArguments());
     }
 
     /**
@@ -120,7 +124,7 @@ class DefinitionDecoratorTest extends \PHPUnit_Framework_TestCase
     {
         $def = new DefinitionDecorator('foo');
 
-        $def->setArguments(array(0 => 'foo'));
+        $def->setArguments([0 => 'foo']);
         $def->replaceArgument(0, 'foo');
 
         $def->getArgument(1);

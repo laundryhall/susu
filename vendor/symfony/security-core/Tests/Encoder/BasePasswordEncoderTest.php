@@ -11,6 +11,7 @@
 
 namespace Symfony\Component\Security\Core\Tests\Encoder;
 
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\Security\Core\Encoder\BasePasswordEncoder;
 
 class PasswordEncoder extends BasePasswordEncoder
@@ -24,7 +25,7 @@ class PasswordEncoder extends BasePasswordEncoder
     }
 }
 
-class BasePasswordEncoderTest extends \PHPUnit_Framework_TestCase
+class BasePasswordEncoderTest extends TestCase
 {
     public function testComparePassword()
     {
@@ -34,9 +35,9 @@ class BasePasswordEncoderTest extends \PHPUnit_Framework_TestCase
 
     public function testDemergePasswordAndSalt()
     {
-        $this->assertEquals(array('password', 'salt'), $this->invokeDemergePasswordAndSalt('password{salt}'));
-        $this->assertEquals(array('password', ''), $this->invokeDemergePasswordAndSalt('password'));
-        $this->assertEquals(array('', ''), $this->invokeDemergePasswordAndSalt(''));
+        $this->assertEquals(['password', 'salt'], $this->invokeDemergePasswordAndSalt('password{salt}'));
+        $this->assertEquals(['password', ''], $this->invokeDemergePasswordAndSalt('password'));
+        $this->assertEquals(['', ''], $this->invokeDemergePasswordAndSalt(''));
     }
 
     public function testMergePasswordAndSalt()

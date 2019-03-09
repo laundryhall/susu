@@ -10,7 +10,6 @@ return array(
     'SendGrid' => array($vendorDir . '/sendgrid/php-http-client/lib'),
     'Pimple' => array($vendorDir . '/pimple/pimple/lib'),
     'Doctrine\\Common\\Lexer\\' => array($vendorDir . '/doctrine/lexer/lib'),
-    'Doctrine\\Common\\Annotations\\' => array($vendorDir . '/doctrine/annotations/lib'),
     'ComponentInstaller' => array($vendorDir . '/robloach/component-installer/src'),
     'Bmatzner\\JQueryMobileBundle' => array($vendorDir . '/bmatzner/jquery-mobile-bundle'),
     'Bmatzner\\JQueryBundle' => array($vendorDir . '/bmatzner/jquery-bundle'),

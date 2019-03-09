@@ -11,13 +11,15 @@
 
 namespace Symfony\Component\DependencyInjection\Tests\Compiler;
 
-use Symfony\Component\DependencyInjection\Reference;
-use Symfony\Component\DependencyInjection\Compiler\CheckCircularReferencesPass;
+use PHPUnit\Framework\TestCase;
+use Symfony\Component\DependencyInjection\Argument\IteratorArgument;
 use Symfony\Component\DependencyInjection\Compiler\AnalyzeServiceReferencesPass;
+use Symfony\Component\DependencyInjection\Compiler\CheckCircularReferencesPass;
 use Symfony\Component\DependencyInjection\Compiler\Compiler;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Reference;
 
-class CheckCircularReferencesPassTest extends \PHPUnit_Framework_TestCase
+class CheckCircularReferencesPassTest extends TestCase
 {
     /**
      * @expectedException \Symfony\Component\DependencyInjection\Exception\ServiceCircularReferenceException
@@ -53,11 +55,11 @@ class CheckCircularReferencesPassTest extends \PHPUnit_Framework_TestCase
 
         $container
             ->register('a', 'stdClass')
-            ->setFactory(array(new Reference('b'), 'getInstance'));
+            ->setFactory([new Reference('b'), 'getInstance']);
 
         $container
             ->register('b', 'stdClass')
-            ->setFactory(array(new Reference('a'), 'getInstance'));
+            ->setFactory([new Reference('a'), 'getInstance']);
 
         $this->process($container);
     }
@@ -86,7 +88,7 @@ class CheckCircularReferencesPassTest extends \PHPUnit_Framework_TestCase
 
         $container
             ->register('b', 'stdClass')
-            ->setFactory(array(new Reference('c'), 'getInstance'));
+            ->setFactory([new Reference('c'), 'getInstance']);
 
         $container->register('c')->addArgument(new Reference('a'));
 
@@ -110,20 +112,46 @@ class CheckCircularReferencesPassTest extends \PHPUnit_Framework_TestCase
     {
         $container = new ContainerBuilder();
         $container->register('a')->addArgument(new Reference('b'));
-        $container->register('b')->addMethodCall('setA', array(new Reference('a')));
+        $container->register('b')->addMethodCall('setA', [new Reference('a')]);
 
         $this->process($container);
+
+        $this->addToAssertionCount(1);
+    }
+
+    public function testProcessIgnoresLazyServices()
+    {
+        $container = new ContainerBuilder();
+        $container->register('a')->setLazy(true)->addArgument(new Reference('b'));
+        $container->register('b')->addArgument(new Reference('a'));
+
+        $this->process($container);
+
+        // just make sure that a lazily loaded service does not trigger a CircularReferenceException
+        $this->addToAssertionCount(1);
+    }
+
+    public function testProcessIgnoresIteratorArguments()
+    {
+        $container = new ContainerBuilder();
+        $container->register('a')->addArgument(new Reference('b'));
+        $container->register('b')->addArgument(new IteratorArgument([new Reference('a')]));
+
+        $this->process($container);
+
+        // just make sure that an IteratorArgument does not trigger a CircularReferenceException
+        $this->addToAssertionCount(1);
     }
 
     protected function process(ContainerBuilder $container)
     {
         $compiler = new Compiler();
         $passConfig = $compiler->getPassConfig();
-        $passConfig->setOptimizationPasses(array(
+        $passConfig->setOptimizationPasses([
             new AnalyzeServiceReferencesPass(true),
             new CheckCircularReferencesPass(),
-        ));
-        $passConfig->setRemovingPasses(array());
+        ]);
+        $passConfig->setRemovingPasses([]);
 
         $compiler->compile($container);
     }

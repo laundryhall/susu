@@ -11,10 +11,11 @@
 
 namespace Symfony\Component\Templating\Tests\Loader;
 
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\Templating\Loader\FilesystemLoader;
 use Symfony\Component\Templating\TemplateReference;
 
-class FilesystemLoaderTest extends \PHPUnit_Framework_TestCase
+class FilesystemLoaderTest extends TestCase
 {
     protected static $fixturesPath;
 
@@ -28,9 +29,9 @@ class FilesystemLoaderTest extends \PHPUnit_Framework_TestCase
         $pathPattern = self::$fixturesPath.'/templates/%name%.%engine%';
         $path = self::$fixturesPath.'/templates';
         $loader = new ProjectTemplateLoader2($pathPattern);
-        $this->assertEquals(array($pathPattern), $loader->getTemplatePathPatterns(), '__construct() takes a path as its second argument');
-        $loader = new ProjectTemplateLoader2(array($pathPattern));
-        $this->assertEquals(array($pathPattern), $loader->getTemplatePathPatterns(), '__construct() takes an array of paths as its second argument');
+        $this->assertEquals([$pathPattern], $loader->getTemplatePathPatterns(), '__construct() takes a path as its second argument');
+        $loader = new ProjectTemplateLoader2([$pathPattern]);
+        $this->assertEquals([$pathPattern], $loader->getTemplatePathPatterns(), '__construct() takes an array of paths as its second argument');
     }
 
     public function testIsAbsolutePath()
@@ -58,14 +59,14 @@ class FilesystemLoaderTest extends \PHPUnit_Framework_TestCase
         $this->assertInstanceOf('Symfony\Component\Templating\Storage\FileStorage', $storage, '->load() returns a FileStorage if you pass a relative template that exists');
         $this->assertEquals($path.'/foo.php', (string) $storage, '->load() returns a FileStorage pointing to the absolute path of the template');
 
-        $logger = $this->getMock('Psr\Log\LoggerInterface');
+        $logger = $this->getMockBuilder('Psr\Log\LoggerInterface')->getMock();
         $logger->expects($this->exactly(2))->method('debug');
 
         $loader = new ProjectTemplateLoader2($pathPattern);
         $loader->setLogger($logger);
         $this->assertFalse($loader->load(new TemplateReference('foo.xml', 'php')), '->load() returns false if the template does not exist for the given engine');
 
-        $loader = new ProjectTemplateLoader2(array(self::$fixturesPath.'/null/%name%', $pathPattern));
+        $loader = new ProjectTemplateLoader2([self::$fixturesPath.'/null/%name%', $pathPattern]);
         $loader->setLogger($logger);
         $loader->load(new TemplateReference('foo.php', 'php'));
     }

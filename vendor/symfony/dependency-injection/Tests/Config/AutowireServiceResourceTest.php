@@ -11,10 +11,14 @@
 
 namespace Symfony\Component\DependencyInjection\Tests\Config;
 
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\Compiler\AutowirePass;
 use Symfony\Component\DependencyInjection\Config\AutowireServiceResource;
 
-class AutowireServiceResourceTest extends \PHPUnit_Framework_TestCase
+/**
+ * @group legacy
+ */
+class AutowireServiceResourceTest extends TestCase
 {
     /**
      * @var AutowireServiceResource
@@ -34,7 +38,7 @@ class AutowireServiceResourceTest extends \PHPUnit_Framework_TestCase
         $this->resource = new AutowireServiceResource(
             $this->class,
             $this->file,
-            array()
+            []
         );
     }
 
@@ -69,7 +73,7 @@ class AutowireServiceResourceTest extends \PHPUnit_Framework_TestCase
         $oldResource = new AutowireServiceResource(
             $this->class,
             $this->file,
-            array('will_be_different')
+            ['will_be_different']
         );
 
         // test with a stale file *and* a resource that *will* be different than the actual
@@ -91,7 +95,7 @@ class AutowireServiceResourceTest extends \PHPUnit_Framework_TestCase
         $resource = new AutowireServiceResource(
             'Some\Non\Existent\Class',
             $this->file,
-            array()
+            []
         );
 
         $this->assertFalse($resource->isFresh($this->getStaleFileTime()), '->isFresh() returns false if the class no longer exists');

@@ -11,16 +11,17 @@
 
 namespace Symfony\Component\DependencyInjection\Tests\ParameterBag;
 
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ParameterBag\FrozenParameterBag;
 
-class FrozenParameterBagTest extends \PHPUnit_Framework_TestCase
+class FrozenParameterBagTest extends TestCase
 {
     public function testConstructor()
     {
-        $parameters = array(
+        $parameters = [
             'foo' => 'foo',
             'bar' => 'bar',
-        );
+        ];
         $bag = new FrozenParameterBag($parameters);
         $this->assertEquals($parameters, $bag->all(), '__construct() takes an array of parameters as its first argument');
     }
@@ -30,7 +31,7 @@ class FrozenParameterBagTest extends \PHPUnit_Framework_TestCase
      */
     public function testClear()
     {
-        $bag = new FrozenParameterBag(array());
+        $bag = new FrozenParameterBag([]);
         $bag->clear();
     }
 
@@ -39,7 +40,7 @@ class FrozenParameterBagTest extends \PHPUnit_Framework_TestCase
      */
     public function testSet()
     {
-        $bag = new FrozenParameterBag(array());
+        $bag = new FrozenParameterBag([]);
         $bag->set('foo', 'bar');
     }
 
@@ -48,8 +49,8 @@ class FrozenParameterBagTest extends \PHPUnit_Framework_TestCase
      */
     public function testAdd()
     {
-        $bag = new FrozenParameterBag(array());
-        $bag->add(array());
+        $bag = new FrozenParameterBag([]);
+        $bag->add([]);
     }
 
     /**
@@ -57,7 +58,7 @@ class FrozenParameterBagTest extends \PHPUnit_Framework_TestCase
      */
     public function testRemove()
     {
-        $bag = new FrozenParameterBag(array('foo' => 'bar'));
+        $bag = new FrozenParameterBag(['foo' => 'bar']);
         $bag->remove('foo');
     }
 }

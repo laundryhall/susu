@@ -11,22 +11,23 @@
 
 namespace Symfony\Component\Asset\Tests;
 
+use PHPUnit\Framework\TestCase;
 use Symfony\Component\Asset\Package;
 use Symfony\Component\Asset\Packages;
 use Symfony\Component\Asset\VersionStrategy\StaticVersionStrategy;
 
-class PackagesTest extends \PHPUnit_Framework_TestCase
+class PackagesTest extends TestCase
 {
     public function testGetterSetters()
     {
         $packages = new Packages();
-        $packages->setDefaultPackage($default = $this->getMock('Symfony\Component\Asset\PackageInterface'));
-        $packages->addPackage('a', $a = $this->getMock('Symfony\Component\Asset\PackageInterface'));
+        $packages->setDefaultPackage($default = $this->getMockBuilder('Symfony\Component\Asset\PackageInterface')->getMock());
+        $packages->addPackage('a', $a = $this->getMockBuilder('Symfony\Component\Asset\PackageInterface')->getMock());
 
         $this->assertEquals($default, $packages->getPackage());
         $this->assertEquals($a, $packages->getPackage('a'));
 
-        $packages = new Packages($default, array('a' => $a));
+        $packages = new Packages($default, ['a' => $a]);
 
         $this->assertEquals($default, $packages->getPackage());
         $this->assertEquals($a, $packages->getPackage('a'));
@@ -36,7 +37,7 @@ class PackagesTest extends \PHPUnit_Framework_TestCase
     {
         $packages = new Packages(
             new Package(new StaticVersionStrategy('default')),
-            array('a' => new Package(new StaticVersionStrategy('a')))
+            ['a' => new Package(new StaticVersionStrategy('a'))]
         );
 
         $this->assertEquals('default', $packages->getVersion('/foo'));
@@ -47,7 +48,7 @@ class PackagesTest extends \PHPUnit_Framework_TestCase
     {
         $packages = new Packages(
             new Package(new StaticVersionStrategy('default')),
-            array('a' => new Package(new StaticVersionStrategy('a')))
+            ['a' => new Package(new StaticVersionStrategy('a'))]
         );
 
         $this->assertEquals('/foo?default', $packages->getUrl('/foo'));

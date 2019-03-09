@@ -12,11 +12,11 @@
 namespace Symfony\Component\Security\Core\User;
 
 use Symfony\Component\Ldap\Entry;
+use Symfony\Component\Ldap\Exception\ConnectionException;
+use Symfony\Component\Ldap\LdapInterface;
 use Symfony\Component\Security\Core\Exception\InvalidArgumentException;
 use Symfony\Component\Security\Core\Exception\UnsupportedUserException;
 use Symfony\Component\Security\Core\Exception\UsernameNotFoundException;
-use Symfony\Component\Ldap\Exception\ConnectionException;
-use Symfony\Component\Ldap\LdapInterface;
 
 /**
  * LdapUserProvider is a simple user provider on top of ldap.
@@ -31,6 +31,7 @@ class LdapUserProvider implements UserProviderInterface
     private $searchDn;
     private $searchPassword;
     private $defaultRoles;
+    private $uidKey;
     private $defaultSearch;
     private $passwordAttribute;
 
@@ -44,13 +45,18 @@ class LdapUserProvider implements UserProviderInterface
      * @param string        $filter
      * @param string        $passwordAttribute
      */
-    public function __construct(LdapInterface $ldap, $baseDn, $searchDn = null, $searchPassword = null, array $defaultRoles = array(), $uidKey = 'sAMAccountName', $filter = '({uid_key}={username})', $passwordAttribute = null)
+    public function __construct(LdapInterface $ldap, $baseDn, $searchDn = null, $searchPassword = null, array $defaultRoles = [], $uidKey = 'sAMAccountName', $filter = '({uid_key}={username})', $passwordAttribute = null)
     {
+        if (null === $uidKey) {
+            $uidKey = 'sAMAccountName';
+        }
+
         $this->ldap = $ldap;
         $this->baseDn = $baseDn;
         $this->searchDn = $searchDn;
         $this->searchPassword = $searchPassword;
         $this->defaultRoles = $defaultRoles;
+        $this->uidKey = $uidKey;
         $this->defaultSearch = str_replace('{uid_key}', $uidKey, $filter);
         $this->passwordAttribute = $passwordAttribute;
     }
@@ -70,7 +76,7 @@ class LdapUserProvider implements UserProviderInterface
         }
 
         $entries = $search->execute();
-        $count = count($entries);
+        $count = \count($entries);
 
         if (!$count) {
             throw new UsernameNotFoundException(sprintf('User "%s" not found.', $username));
@@ -80,7 +86,16 @@ class LdapUserProvider implements UserProviderInterface
             throw new UsernameNotFoundException('More than one user found');
         }
 
-        return $this->loadUser($username, $entries[0]);
+        $entry = $entries[0];
+
+        try {
+            if (null !== $this->uidKey) {
+                $username = $this->getAttributeValue($entry, $this->uidKey);
+            }
+        } catch (InvalidArgumentException $e) {
+        }
+
+        return $this->loadUser($username, $entry);
     }
 
     /**
@@ -89,7 +104,7 @@ class LdapUserProvider implements UserProviderInterface
     public function refreshUser(UserInterface $user)
     {
         if (!$user instanceof User) {
-            throw new UnsupportedUserException(sprintf('Instances of "%s" are not supported.', get_class($user)));
+            throw new UnsupportedUserException(sprintf('Instances of "%s" are not supported.', \get_class($user)));
         }
 
         return new User($user->getUsername(), null, $user->getRoles());
@@ -100,7 +115,7 @@ class LdapUserProvider implements UserProviderInterface
      */
     public function supportsClass($class)
     {
-        return $class === 'Symfony\Component\Security\Core\User\User';
+        return 'Symfony\Component\Security\Core\User\User' === $class;
     }
 
     /**
@@ -113,30 +128,31 @@ class LdapUserProvider implements UserProviderInterface
      */
     protected function loadUser($username, Entry $entry)
     {
-        $password = $this->getPassword($entry);
+        $password = null;
+
+        if (null !== $this->passwordAttribute) {
+            $password = $this->getAttributeValue($entry, $this->passwordAttribute);
+        }
 
         return new User($username, $password, $this->defaultRoles);
     }
 
     /**
-     * Fetches the password from an LDAP entry.
+     * Fetches a required unique attribute value from an LDAP entry.
      *
-     * @param null|Entry $entry
+     * @param Entry|null $entry
+     * @param string     $attribute
      */
-    private function getPassword(Entry $entry)
+    private function getAttributeValue(Entry $entry, $attribute)
     {
-        if (null === $this->passwordAttribute) {
-            return;
+        if (!$entry->hasAttribute($attribute)) {
+            throw new InvalidArgumentException(sprintf('Missing attribute "%s" for user "%s".', $attribute, $entry->getDn()));
         }
 
-        if (!$entry->hasAttribute($this->passwordAttribute)) {
-            throw new InvalidArgumentException(sprintf('Missing attribute "%s" for user "%s".', $this->passwordAttribute, $entry->getDn()));
-        }
+        $values = $entry->getAttribute($attribute);
 
-        $values = $entry->getAttribute($this->passwordAttribute);
-
-        if (1 !== count($values)) {
-            throw new InvalidArgumentException(sprintf('Attribute "%s" has multiple values.', $this->passwordAttribute));
+        if (1 !== \count($values)) {
+            throw new InvalidArgumentException(sprintf('Attribute "%s" has multiple values.', $attribute));
         }
 
         return $values[0];

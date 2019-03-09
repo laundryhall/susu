@@ -33,10 +33,14 @@ class ConfigCache extends ResourceCheckerConfigCache
      */
     public function __construct($file, $debug)
     {
-        parent::__construct($file, array(
-            new SelfCheckingResourceChecker(),
-        ));
         $this->debug = (bool) $debug;
+
+        $checkers = [];
+        if (true === $this->debug) {
+            $checkers = [new SelfCheckingResourceChecker()];
+        }
+
+        parent::__construct($file, $checkers);
     }
 
     /**
