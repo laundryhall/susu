@@ -9,8 +9,7 @@
     "bmatzner/jquery-mobile-bundle": "*",
     "twilio/sdk": "4.3.0",
     "ext-memcached": "*",
-    "sendgrid/sendgrid": "~5.0.9",
-    "ext-gd": "*"
+    "sendgrid/sendgrid": "~5.0.9"
 
   },
   "require-dev": {
