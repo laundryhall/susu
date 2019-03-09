@@ -77,7 +77,7 @@ $db->query('set @@session.time_zone = "-4:00"');
 	if(isset($_POST['save'])){
 		//die("conn made");
 		echo("conn made selb");
-		$auth = urlencode("email=api@instantcard.net&password=instantcardapitest");
+		$auth = rawurlencode("email=api@instantcard.net&password=instantcardapitest");
 		/*
 		$auth = json_encode(array(
 		        'email' => urlencode("api@instantcard.net"),
