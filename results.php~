@@ -76,7 +76,7 @@ return $data;
 $db->query('set @@session.time_zone = "-4:00"');
 	if(isset($_POST['save'])){
 		//die("conn made");
-		echo("conn made safe");
+		echo("conn made selb");
 		$auth = urlencode("email=api@instantcard.net&password=instantcardapitest");
 		/*
 		$auth = json_encode(array(
@@ -86,7 +86,7 @@ $db->query('set @@session.time_zone = "-4:00"');
 		 */
 
 		$ch = curl_init();
-    		curl_setopt($ch, CURLOPT_URL, 'https://core.instantcard.net/api/v2/');
+    		curl_setopt($ch, CURLOPT_URL, 'https://core.instantcard.net/api/v2/authenticate');
 		curl_setopt($ch, CURLOPT_POST, true);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array(
