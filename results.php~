@@ -89,10 +89,12 @@ $db->query('set @@session.time_zone = "-4:00"');
     		curl_setopt($ch, CURLOPT_URL, 'https://core.instantcard.net/api/v2/authenticate');
 		curl_setopt($ch, CURLOPT_POST, true);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		/*
 		curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 			'Accept: application/json',
 		        'cache-control: no-cache'
 	    	));
+		 */
 	        curl_setopt($ch, CURLOPT_POSTFIELDS, "email=api@instantcard.net&password=instantcardapitest");
 	        $response = curl_exec($ch);
 	        echo($response);
