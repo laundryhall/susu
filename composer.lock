@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2e2829652d266bf5e534a1658875b891",
+    "content-hash": "7644a5ed62afc946a81201c9850330a0",
     "packages": [
         {
             "name": "bmatzner/jquery-bundle",
@@ -2614,7 +2614,8 @@
     "prefer-lowest": false,
     "platform": {
         "ext-memcached": "*",
-        "ext-gd": "*"
+        "ext-gd": "*",
+        "ext-exif": "*"
     },
     "platform-dev": []
 }
