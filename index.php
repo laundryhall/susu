@@ -2,6 +2,8 @@
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET, POST');
 date_default_timezone_set('America/New_York');
+phpinfo();
+die();
 
 $db = new PDO('mysql:host=us-cdbr-iron-east-02.cleardb.net;dbname=heroku_044365ba50ee2c5', 'b42b677fc15b1c', 'ba89aa3a');
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
