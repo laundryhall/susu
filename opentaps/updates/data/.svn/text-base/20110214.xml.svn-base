@@ -1,0 +1,12 @@
+<entity-engine-xml>
+
+<!-- adds mapping types for returns -->
+
+    <InvoiceItemTypeMap invoiceItemMapKey="RET_SERV_ITEM" invoiceTypeId="CUST_RTN_INVOICE" invoiceItemTypeId="CRT_SPROD_ITEM"/>
+ 
+    <ProductInvoiceItemType productTypeId="FINISHED_GOOD" invoiceTypeId="CUST_RTN_INVOICE" invoiceItemTypeId="CRT_FPROD_ITEM"/>
+    <ProductInvoiceItemType productTypeId="FINDIG_GOOD" invoiceTypeId="CUST_RTN_INVOICE" invoiceItemTypeId="CRT_FDPROD_ITEM"/>
+    <ProductInvoiceItemType productTypeId="DIGITAL_GOOD" invoiceTypeId="CUST_RTN_INVOICE" invoiceItemTypeId="CRT_DPROD_ITEM"/>
+    <ProductInvoiceItemType productTypeId="SERVICE" invoiceTypeId="CUST_RTN_INVOICE" invoiceItemTypeId="CRT_SPROD_ITEM"/>
+
+</entity-engine-xml>

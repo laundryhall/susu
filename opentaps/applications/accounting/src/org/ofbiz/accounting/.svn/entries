@@ -1,0 +1,123 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/applications/accounting/src/org/ofbiz/accounting
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2010-07-27T06:57:40.697169Z
+15591
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+test
+dir
+
+period
+dir
+
+agreement
+dir
+
+GlEvents.java
+file
+
+
+
+
+2011-02-23T20:57:39.000000Z
+94c324dd46795b8a4a4f80b4ebad91cf
+2009-10-20T15:29:04.637863Z
+13720
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+7497
+
+finaccount
+dir
+
+AccountingException.java
+file
+
+
+
+
+2011-02-23T20:57:39.000000Z
+1d78d77a7fac5851298a9ee113cea6ef
+2009-10-20T15:29:04.637863Z
+13720
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1832
+
+thirdparty
+dir
+
+invoice
+dir
+
+tax
+dir
+
+payment
+dir
+
+util
+dir
+

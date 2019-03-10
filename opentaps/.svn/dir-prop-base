@@ -1,0 +1,14 @@
+K 10
+svn:ignore
+V 69
+ofbiz.jar
+bin
+*.patch
+*.iml
+*.ipr
+*.iws
+*.time
+.settings
+comment.tmp
+
+END

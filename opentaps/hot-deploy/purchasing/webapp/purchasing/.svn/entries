@@ -1,0 +1,95 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/hot-deploy/purchasing/webapp/purchasing
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2011-02-22T20:17:48.546131Z
+15765
+oandreyev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+index.jsp
+file
+
+
+
+
+2011-02-23T21:04:10.000000Z
+ba9c912ad42f52423da08408f887d40d
+2010-10-19T05:11:34.342529Z
+15681
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+810
+
+supplier
+dir
+
+includes
+dir
+
+planning
+dir
+
+WEB-INF
+dir
+
+common
+dir
+
+css
+dir
+
+error
+dir
+
+order
+dir
+
+bom
+dir
+
+myhome
+dir
+
+reports
+dir
+

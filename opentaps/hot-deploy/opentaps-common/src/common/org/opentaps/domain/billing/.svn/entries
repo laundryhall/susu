@@ -1,0 +1,77 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/hot-deploy/opentaps-common/src/common/org/opentaps/domain/billing
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2010-12-06T18:16:58.091897Z
+15704
+jwickers
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+lockbox
+dir
+
+agreement
+dir
+
+financials
+dir
+
+BillingDomainInterface.java
+file
+
+
+
+
+2011-02-23T21:01:14.000000Z
+86afd0738030242e679f0112c1c9b4dc
+2010-10-19T05:11:34.342529Z
+15681
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3486
+
+invoice
+dir
+
+payment
+dir
+

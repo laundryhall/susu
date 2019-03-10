@@ -1,0 +1,55 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/framework/webtools/webapp/webtools/WEB-INF/actions
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2010-04-20T09:43:48.048428Z
+15433
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+service
+dir
+
+log
+dir
+
+cache
+dir
+
+artifactinfo
+dir
+
+datafile
+dir
+
+labelmanager
+dir
+
+workflow
+dir
+
+entity
+dir
+
+stats
+dir
+

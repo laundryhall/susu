@@ -1,0 +1,52 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/framework/base/src/org/ofbiz/base
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2010-08-18T15:13:07.211016Z
+15620
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+test
+dir
+
+crypto
+dir
+
+component
+dir
+
+container
+dir
+
+config
+dir
+
+location
+dir
+
+splash
+dir
+
+util
+dir
+

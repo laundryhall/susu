@@ -1,0 +1,129 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/applications/content
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2010-08-18T11:08:20.461530Z
+15619
+sparksun
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+servicedef
+dir
+
+widget
+dir
+
+script
+dir
+
+config
+dir
+
+lib
+dir
+
+index
+dir
+
+src
+dir
+
+ofbiz-component.xml
+file
+
+
+
+
+2011-02-23T20:57:49.000000Z
+b90afd1199161b52f7e59be6c5542255
+2010-07-27T06:56:21.395551Z
+15590
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4505
+
+data
+dir
+
+entitydef
+dir
+
+template
+dir
+
+webapp
+dir
+
+build.xml
+file
+
+
+
+
+2011-02-23T20:57:49.000000Z
+32d2545a88aa86fa3817cbe068f77049
+2009-10-20T15:29:04.637863Z
+13720
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4052
+

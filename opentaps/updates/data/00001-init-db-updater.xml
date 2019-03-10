@@ -1,0 +1,26 @@
+<entity-engine-xml>
+<!--
+ * Copyright (c) Open Source Strategies, Inc.
+ *
+ * Opentaps is free software: you can redistribute it and/or modify it
+ * under the terms of the GNU Affero General Public License as published
+ * by the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Opentaps is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with Opentaps.  If not, see <http://www.gnu.org/licenses/>.
+ *
+-->
+
+    <!-- Statuses for OpentapsDbUpdate -->
+    <StatusType statusTypeId="UPDATE_STATUS" hasTable="N" description="Opentaps System Update Statuses"/>
+    <StatusItem statusId="UPDATE_SUCCESS" statusTypeId="UPDATE_STATUS" statusCode="SUCCESS" sequenceId="01" description="Success"/>
+    <StatusItem statusId="UPDATE_FAILED"  statusTypeId="UPDATE_STATUS" statusCode="FAILED"  sequenceId="02" description="Failed"/>
+    <StatusItem statusId="UPDATE_SKIPPED" statusTypeId="UPDATE_STATUS" statusCode="SKIPPED" sequenceId="03" description="Skipped"/>
+
+</entity-engine-xml>

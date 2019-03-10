@@ -1,0 +1,178 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/specialpurpose
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2010-10-19T05:11:34.342529Z
+15681
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+ebay
+dir
+
+ldap
+dir
+
+hhfacility
+dir
+
+build.xml
+file
+
+
+
+
+2011-02-23T21:00:21.000000Z
+da9795d5d89f1c96c9a613e01c780a55
+2009-10-20T15:29:04.637863Z
+13720
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3661
+
+webpos
+dir
+
+ecommerce
+dir
+
+pos
+dir
+
+googleCheckout
+dir
+
+oagis
+dir
+
+build-ear.xml
+file
+
+
+
+
+2011-02-23T21:00:21.000000Z
+fae8a749e59080442516b1bcf825baf3
+2010-10-19T05:11:34.342529Z
+15681
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5989
+
+cmssite
+dir
+
+googlebase
+dir
+
+myportal
+dir
+
+shark
+dir
+
+assetmaint
+dir
+
+workflow
+dir
+
+projectmgr
+dir
+
+crowd
+dir
+
+component-load.xml
+file
+
+
+
+
+2011-02-23T21:00:21.000000Z
+0dcfd9738531f57fd4d86f020fccfc9d
+2009-10-20T15:29:04.637863Z
+13720
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1756
+

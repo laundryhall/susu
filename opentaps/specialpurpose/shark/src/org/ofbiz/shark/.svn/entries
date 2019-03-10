@@ -1,0 +1,107 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/specialpurpose/shark/src/org/ofbiz/shark
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2009-10-20T15:29:04.637863Z
+13720
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+repository
+dir
+
+requester
+dir
+
+container
+dir
+
+SharkConstants.java
+file
+
+
+
+
+2011-02-23T21:00:20.000000Z
+2adfab105c7cdb37927b41f1f1b12658
+2009-10-20T15:29:04.637863Z
+13720
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9221
+
+transaction
+dir
+
+compare
+dir
+
+logging
+dir
+
+mapping
+dir
+
+expression
+dir
+
+service
+dir
+
+auth
+dir
+
+instance
+dir
+
+audit
+dir
+
+tool
+dir
+
+user
+dir
+
+client
+dir
+

@@ -1,0 +1,110 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/applications/product/script/org/ofbiz/product
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2010-07-27T06:56:21.395551Z
+15590
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+product
+dir
+
+subscription
+dir
+
+rental
+dir
+
+UpgradeServices.xml
+file
+
+
+
+
+2011-02-23T20:57:19.000000Z
+529b9ce8d612d94b7699abe1967cc97c
+2009-10-20T15:29:04.637863Z
+13720
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2588
+
+feature
+dir
+
+olap
+dir
+
+promo
+dir
+
+store
+dir
+
+inventory
+dir
+
+price
+dir
+
+supplier
+dir
+
+storage
+dir
+
+communication
+dir
+
+config
+dir
+
+cost
+dir
+
+catalog
+dir
+
+category
+dir
+

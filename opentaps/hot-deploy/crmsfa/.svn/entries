@@ -1,0 +1,129 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/hot-deploy/crmsfa
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2010-12-07T14:58:09.925878Z
+15709
+jwickers
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+servicedef
+dir
+
+widget
+dir
+
+script
+dir
+
+config
+dir
+
+lib
+dir
+
+src
+dir
+
+docs
+dir
+
+ofbiz-component.xml
+file
+
+
+
+
+2011-02-23T21:04:19.000000Z
+841dca1d1a19b5b2b5796cb9714851fb
+2010-10-19T05:11:34.342529Z
+15681
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9212
+
+data
+dir
+
+entitydef
+dir
+
+templates
+dir
+
+webapp
+dir
+
+build.xml
+file
+
+
+
+
+2011-02-23T21:04:19.000000Z
+bd67fa7cd00663c02078425364c8c692
+2010-10-19T05:11:34.342529Z
+15681
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10513
+

@@ -1,0 +1,131 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/hot-deploy/opentaps-common/src/common/org/opentaps/common
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2011-02-22T20:17:48.546131Z
+15765
+oandreyev
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+product
+dir
+
+event
+dir
+
+container
+dir
+
+widget
+dir
+
+forms
+dir
+
+paypal
+dir
+
+shipment
+dir
+
+custrequest
+dir
+
+workeffort
+dir
+
+invoice
+dir
+
+quote
+dir
+
+inventory
+dir
+
+party
+dir
+
+autocomplete
+dir
+
+manufacturing
+dir
+
+domain
+dir
+
+agreement
+dir
+
+reporting
+dir
+
+content
+dir
+
+order
+dir
+
+template
+dir
+
+CommonServices.java
+file
+
+
+
+
+2011-02-23T21:01:15.000000Z
+dee787b9df5bc1a34c2ec0155b70cc51
+2010-10-19T05:11:34.342529Z
+15681
+jwickers
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+21689
+
+util
+dir
+
+webapp
+dir
+

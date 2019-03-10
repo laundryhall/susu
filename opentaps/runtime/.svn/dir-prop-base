@@ -1,0 +1,11 @@
+K 10
+svn:ignore
+V 62
+jetty
+svninfo.ftl
+data.zip
+test-list-build.xml
+lucene
+uploads
+
+END

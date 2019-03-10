@@ -1,0 +1,100 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/hot-deploy/crmsfa/src/com/opensourcestrategies/crmsfa
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2010-10-19T05:11:34.342529Z
+15681
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+accounts
+dir
+
+quotes
+dir
+
+commission
+dir
+
+marketing
+dir
+
+ajax
+dir
+
+opportunities
+dir
+
+common
+dir
+
+leads
+dir
+
+forecasts
+dir
+
+reports
+dir
+
+cases
+dir
+
+orders
+dir
+
+partners
+dir
+
+party
+dir
+
+handlers
+dir
+
+returns
+dir
+
+activities
+dir
+
+communication
+dir
+
+security
+dir
+
+teams
+dir
+
+content
+dir
+
+util
+dir
+
+voip
+dir
+
+contacts
+dir
+

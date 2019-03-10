@@ -1,0 +1,86 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/applications/manufacturing/webapp/manufacturing
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2010-07-27T06:57:40.697169Z
+15591
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+index.jsp
+file
+
+
+
+
+2011-02-23T20:57:31.000000Z
+130157810c25640dc6d265cb29c97c51
+2009-10-20T15:29:04.637863Z
+13720
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+877
+
+WEB-INF
+dir
+
+routing
+dir
+
+error
+dir
+
+lookup
+dir
+
+jobshopmgt
+dir
+
+bom
+dir
+
+mrp
+dir
+
+reports
+dir
+

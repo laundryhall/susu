@@ -1,0 +1,123 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/hot-deploy/funambol
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2010-10-19T05:11:34.342529Z
+15681
+jwickers
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+_config
+dir
+
+logs
+dir
+
+install
+dir
+
+lib
+dir
+
+src
+dir
+
+testsrc
+dir
+
+docs
+dir
+
+ofbiz-component.xml
+file
+
+
+
+
+2011-02-23T21:04:09.000000Z
+a961c97007df130f50209d91ba4e3788
+2010-10-19T05:11:34.342529Z
+15681
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1697
+
+data
+dir
+
+webapp
+dir
+
+build.xml
+file
+
+
+
+
+2011-02-23T21:04:09.000000Z
+07ce19bc3d3b6338ac7d2a8387d3a3ff
+2010-10-19T05:11:34.342529Z
+15681
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+8066
+

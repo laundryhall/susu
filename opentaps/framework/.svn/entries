@@ -1,0 +1,202 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/framework
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2011-02-23T21:49:07.775121Z
+15770
+oandreyev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+geronimo
+dir
+
+widget
+dir
+
+guiapp
+dir
+
+common
+dir
+
+bi
+dir
+
+example
+dir
+
+start
+dir
+
+entityext
+dir
+
+build.xml
+file
+
+
+
+
+2011-02-23T21:00:13.000000Z
+4fe73476fe2d199c5d46582577a5f4ed
+2009-12-14T13:25:49.572729Z
+14257
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6887
+
+webtools
+dir
+
+minilang
+dir
+
+jetty
+dir
+
+testtools
+dir
+
+service
+dir
+
+webslinger
+dir
+
+build-ear.xml
+file
+
+
+
+
+2011-02-23T21:00:13.000000Z
+0c14ff8c093219c116b674a2eb792ace
+2010-10-19T05:11:34.342529Z
+15681
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+13175
+
+images
+dir
+
+appserver
+dir
+
+security
+dir
+
+datafile
+dir
+
+base
+dir
+
+resources
+dir
+
+exampleext
+dir
+
+entity
+dir
+
+catalina
+dir
+
+webapp
+dir
+
+component-load.xml
+file
+
+
+
+
+2011-02-23T21:00:13.000000Z
+07f670c28b1e41ab99d54a219201e8ff
+2009-10-22T12:03:15.660170Z
+13743
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2242
+

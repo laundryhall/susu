@@ -1,0 +1,123 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/hot-deploy/warehouse
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2010-11-17T18:38:00.956432Z
+15692
+jwickers
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+servicedef
+dir
+
+widget
+dir
+
+script
+dir
+
+config
+dir
+
+lib
+dir
+
+src
+dir
+
+ofbiz-component.xml
+file
+
+
+
+
+2011-02-23T21:03:49.000000Z
+01f655af02e3e7317c19dde0fdf9eae9
+2010-10-19T05:11:34.342529Z
+15681
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3974
+
+data
+dir
+
+entitydef
+dir
+
+webapp
+dir
+
+build.xml
+file
+
+
+
+
+2011-02-23T21:03:49.000000Z
+43d5ec1a24a3968d1d76c85996e8b3d0
+2010-10-19T05:11:34.342529Z
+15681
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+9680
+

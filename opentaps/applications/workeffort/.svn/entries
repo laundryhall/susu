@@ -1,0 +1,123 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/applications/workeffort
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2010-08-18T11:08:20.461530Z
+15619
+sparksun
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+servicedef
+dir
+
+widget
+dir
+
+script
+dir
+
+config
+dir
+
+src
+dir
+
+ofbiz-component.xml
+file
+
+
+
+
+2011-02-23T20:57:35.000000Z
+c59e5009808bcdf5da1cc5c58149f807
+2009-10-20T15:29:04.637863Z
+13720
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2888
+
+data
+dir
+
+entitydef
+dir
+
+testdef
+dir
+
+webapp
+dir
+
+build.xml
+file
+
+
+
+
+2011-02-23T20:57:35.000000Z
+4055ba3988aab68d1a7da82d62ccd6bd
+2009-10-20T15:29:04.637863Z
+13720
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3477
+

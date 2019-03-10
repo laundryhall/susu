@@ -1,0 +1,101 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/applications/order/webapp/ordermgr
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2010-08-18T15:13:07.211016Z
+15620
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+return
+dir
+
+requirement
+dir
+
+setup
+dir
+
+entry
+dir
+
+task
+dir
+
+index.jsp
+file
+
+
+
+
+2011-02-23T20:57:52.000000Z
+130157810c25640dc6d265cb29c97c51
+2009-10-20T15:29:04.637863Z
+13720
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+877
+
+images
+dir
+
+WEB-INF
+dir
+
+request
+dir
+
+error
+dir
+
+lookup
+dir
+
+order
+dir
+
+quote
+dir
+
+reports
+dir
+

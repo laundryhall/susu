@@ -1,0 +1,193 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/hot-deploy/opentaps-common/webapp/js/dojo_0.90/dojo/cldr/nls
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2010-03-02T01:50:27.945195Z
+15073
+sparksun
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+zh-cn
+dir
+
+zh
+dir
+
+pt
+dir
+
+ko-kr
+dir
+
+en-ca
+dir
+
+pt-br
+dir
+
+it-it
+dir
+
+en-us
+dir
+
+gregorian.js
+file
+
+
+
+
+2011-02-23T21:03:36.000000Z
+c83a63fdc28a49ffc84b62a93b4d61d9
+2010-03-02T01:50:27.945195Z
+15073
+sparksun
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1773
+
+de
+dir
+
+en-gb
+dir
+
+ja
+dir
+
+ja-jp
+dir
+
+en
+dir
+
+number.js
+file
+
+
+
+
+2011-02-23T21:03:36.000000Z
+08558642bfae8f64ee1197571438cf37
+2010-03-02T01:50:27.945195Z
+15073
+sparksun
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+689
+
+en-au
+dir
+
+currency.js
+file
+
+
+
+
+2011-02-23T21:03:36.000000Z
+de962054529a6db8da69ab1f9a1b22e0
+2010-03-02T01:50:27.945195Z
+15073
+sparksun
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+186
+
+fr
+dir
+
+es
+dir
+
+ko
+dir
+
+zh-tw
+dir
+
+it
+dir
+
+es-es
+dir
+
+de-de
+dir
+

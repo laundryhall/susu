@@ -1,0 +1,42 @@
+/*
+ * Copyright (c) Open Source Strategies, Inc.
+ * 
+ * Opentaps is free software: you can redistribute it and/or modify it
+ * under the terms of the GNU Affero General Public License as published
+ * by the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * Opentaps is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License
+ * along with Opentaps.  If not, see <http://www.gnu.org/licenses/>.
+ */
+ import org.ofbiz.base.util.UtilMisc;
+ import org.opentaps.common.util.UtilMessage;
+ import org.opentaps.common.util.UtilCommon;
+ 
+ shipmentId = context.get("shipmentId");
+ toPerson = context.get("toPerson");
+ toGroup = context.get("toPartyGroup");
+ fromPerson = context.get("fromPerson");
+ fromPartyGroup = context.get("fromPartyGroup");
+ 
+ fromParty = null;
+ if (fromPartyGroup != null) {
+     fromParty = fromPartyGroup.get("groupName");
+ } else if (fromPerson != null) {
+     fromParty = fromPerson.get("firstName") + " " + fromPerson.get("lastName");
+ };
+ 
+ toParty = null;
+ if (toPartyGroup != null) {
+     toParty = toPartyGroup.get("groupName");
+ } else if (toPerson != null) {
+     toParty = toPerson.get("firstName") + " " + toPerson.get("lastName");
+ };
+
+ context{"history"} = UtilCommon.makeHistoryEntry(UtilMessage.expandLabel("WarehouseNavHistoryShipment", locale, UtilMisc.toMap("shipmentId", shipmentId, "fromParty", fromParty, "toParty", toParty)));
+ 

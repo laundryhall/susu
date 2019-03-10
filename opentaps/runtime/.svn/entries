@@ -1,0 +1,80 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/runtime
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2010-01-19T19:16:48.306252Z
+14669
+oandreyev
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+output
+dir
+
+tmp
+dir
+
+logs
+dir
+
+svninfo.ftl
+file
+
+
+
+
+2011-02-23T20:57:15.000000Z
+7215ee9c7d9dc229d2921a40e899ec5f
+2009-08-04T13:41:28.539375Z
+12802
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1
+
+tempfiles
+dir
+
+data
+dir
+
+catalina
+dir
+

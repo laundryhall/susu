@@ -1,0 +1,61 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/hot-deploy/financials/webapp/financials/WEB-INF/actions
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2011-02-02T23:50:24.926669Z
+15736
+sichen
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+invoices
+dir
+
+payables
+dir
+
+employees
+dir
+
+receivables
+dir
+
+includes
+dir
+
+configuration
+dir
+
+dashboard
+dir
+
+transactions
+dir
+
+agreements
+dir
+
+partners
+dir
+
+reports
+dir
+

@@ -1,0 +1,64 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/hot-deploy/opentaps-common/webapp/common
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2011-02-22T20:17:48.546131Z
+15765
+oandreyev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+product
+dir
+
+includes
+dir
+
+myprofile
+dir
+
+WEB-INF
+dir
+
+contactmech
+dir
+
+calendar
+dir
+
+agreements
+dir
+
+order
+dir
+
+report
+dir
+
+lookups
+dir
+
+payment
+dir
+
+quote
+dir
+

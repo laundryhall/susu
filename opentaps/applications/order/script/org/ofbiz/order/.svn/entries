@@ -1,0 +1,89 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/applications/order/script/org/ofbiz/order
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2009-12-14T13:25:49.572729Z
+14257
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+requirement
+dir
+
+customer
+dir
+
+shoppinglist
+dir
+
+communication
+dir
+
+request
+dir
+
+thirdparty
+dir
+
+UpgradeServices.xml
+file
+
+
+
+
+2011-02-23T20:57:50.000000Z
+72c2f51ed515bcc93c7b7c4669775e2b
+2009-10-20T15:29:04.637863Z
+13720
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3094
+
+order
+dir
+
+opportunity
+dir
+
+quote
+dir
+

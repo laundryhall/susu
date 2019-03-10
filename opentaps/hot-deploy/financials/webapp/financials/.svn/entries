@@ -1,0 +1,101 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/hot-deploy/financials/webapp/financials
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2011-02-16T00:04:05.954793Z
+15761
+oandreyev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+invoices
+dir
+
+payables
+dir
+
+employees
+dir
+
+index.jsp
+file
+
+
+
+
+2011-02-23T21:04:13.000000Z
+ee6f64bc4de2de60d11eec1e53e38fbb
+2006-05-17T18:33:21.704601Z
+1938
+ali
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+44
+
+receivables
+dir
+
+includes
+dir
+
+WEB-INF
+dir
+
+configuration
+dir
+
+dashboard
+dir
+
+transactions
+dir
+
+error
+dir
+
+agreements
+dir
+
+partners
+dir
+
+reports
+dir
+

@@ -1,0 +1,126 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/applications/product
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2010-09-23T04:24:47.532226Z
+15653
+jwickers
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+servicedef
+dir
+
+widget
+dir
+
+script
+dir
+
+config
+dir
+
+src
+dir
+
+ofbiz-component.xml
+file
+
+
+
+
+2011-02-23T20:57:26.000000Z
+efc9d99aa51229df24a2e03c17055eee
+2009-10-20T15:29:04.637863Z
+13720
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5153
+
+data
+dir
+
+entitydef
+dir
+
+templates
+dir
+
+testdef
+dir
+
+webapp
+dir
+
+build.xml
+file
+
+
+
+
+2011-02-23T20:57:26.000000Z
+1e678d40eea2a2d3a64f6ab390872828
+2009-10-20T15:29:04.637863Z
+13720
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4135
+

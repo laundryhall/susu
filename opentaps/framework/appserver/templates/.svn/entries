@@ -1,0 +1,52 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/framework/appserver/templates
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2010-01-20T06:58:28.316521Z
+14673
+sparksun
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+test
+dir
+
+tomcat55
+dir
+
+wasce2
+dir
+
+weblogic81
+dir
+
+jboss510
+dir
+
+jboss422
+dir
+
+orion202
+dir
+
+tomcat6
+dir
+

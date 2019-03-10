@@ -1,0 +1,126 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/applications/accounting
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2010-08-18T11:08:20.461530Z
+15619
+sparksun
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+servicedef
+dir
+
+widget
+dir
+
+script
+dir
+
+config
+dir
+
+lib
+dir
+
+src
+dir
+
+ofbiz-component.xml
+file
+
+
+
+
+2011-02-23T20:57:39.000000Z
+18dc2d29611aff1ca859fdb06a9aeef6
+2009-10-20T15:29:04.637863Z
+13720
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6524
+
+data
+dir
+
+entitydef
+dir
+
+testdef
+dir
+
+webapp
+dir
+
+build.xml
+file
+
+
+
+
+2011-02-23T20:57:39.000000Z
+0163ef56897e736565bf5f7b9db982e3
+2009-10-20T15:29:04.637863Z
+13720
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4163
+

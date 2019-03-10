@@ -1,0 +1,89 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/applications/order/src/org/ofbiz/order
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2010-08-18T15:13:07.211016Z
+15620
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+test
+dir
+
+requirement
+dir
+
+shoppingcart
+dir
+
+task
+dir
+
+shoppinglist
+dir
+
+finaccount
+dir
+
+thirdparty
+dir
+
+order
+dir
+
+OrderManagerEvents.java
+file
+
+
+
+
+2011-02-23T20:57:50.000000Z
+990386b1de0bdff7cdf1cc8a00e08e97
+2009-10-20T15:29:04.637863Z
+13720
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+15013
+
+quote
+dir
+

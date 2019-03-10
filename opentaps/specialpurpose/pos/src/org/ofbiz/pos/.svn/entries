@@ -1,0 +1,86 @@
+10
+
+dir
+15772
+svn://svn.opentaps.org/opentaps_all/opentaps_pro/versions/1.4/trunk/specialpurpose/pos/src/org/ofbiz/pos
+svn://svn.opentaps.org/opentaps_all
+
+
+
+2010-04-20T09:42:36.812354Z
+15432
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+d3523486-f5fe-0310-a41a-a15a4e76f3c7
+
+device
+dir
+
+screen
+dir
+
+event
+dir
+
+component
+dir
+
+container
+dir
+
+config
+dir
+
+PosTransaction.java
+file
+
+
+
+
+2011-02-23T21:00:18.000000Z
+02130428fb902934266d4377b5bf9eac
+2010-04-20T09:42:36.812354Z
+15432
+jwickers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+62102
+
+adaptor
+dir
+
+jpos
+dir
+
